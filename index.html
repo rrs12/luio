@@ -10,10 +10,64 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gruppo&family=Montserrat:wght@500;600&family=Pixelify+Sans&family=Poppins:wght@400;700&family=Space+Grotesk&display=swap" rel="stylesheet">
 
     
 </head>
-<body>
+<body class="font-[Poppins]">
+    <!--Navbar-->
+    <div id="full-screen" class="overflow-hidden h-screen dark:mesh-bg mesh-bg-white">
+        <header class="nav_bar">
+            <nav
+                class="navbar flex justify-between items-center dark:bg-black bg-gray-200 w-full px-2 mx-auto z-2 py-4 text-white overflow-hidden">
+                <div class="logo_text">
+                    <a href="#" class="flex">
+                        <img src="" class="sm:h-14 xs:-ml-2 xs:mr-2 sm:mr-3 xl:h-16 h-10" />
+                        <span
+                            class="self-center sm:text-2xl font-semibold whitespace-nowrap dark:text-white text-black overflow-hidden font-poppins xl:3xl xs:text-base">Luio</span>
+                        <span
+                            class="self-center ml-2 px-1 py-1 md:px-2 rounded-lg bg-black text-white dark:bg-white dark:text-black text-xs whitespace-nowrap overflow-hidden font-poppins">beta</span>
+                    </a>
+                </div>
+                <div class="xl:text-xl transition-all lg:block hidden rounded-l-3xl overflow-hidden  nav-links lg:static absolute lg:min-h-fit min-h-[90vh] left-[-100%] top-[3%] lg:ml-10  lg:py-2 flex-row  text-xl lg:text-base lg:mt-0 py-14 border-l-none border-r-xl"
+                    id="unhide">
+
+                    <ul
+                        class=" flex lg:flex-row flex-col lg:gap-[2vw] gap-8 font-normal overflow-hidden px-20 h-full">
+                        <li class="cursor-pointer overflow-hidden text-black dark:text-white">
+                            <a class="duration-500 font-bold hover:text-gray-400" href="#features" onclick="hide()">Features</a>
+                        </li>
+                        <li class="cursor-pointer overflow-hidden text-black dark:text-white">
+                            <a class="duration-500 font-bold hover:text-gray-400" href="#review" onclick="hide()">Review</a>
+                        </li>
+                        <li class="overscroll-none overflow-hidden">
+                            <a class="lg:hidden font-bold py-2 overflow-hidden rounded-md lg:text-2xl lg:px-2 bg-gradient-to-r from-[#f9bf0e] to-[#f36f20] bg-clip-text text-transparent overscroll-none"
+                                href="login.html">
+                                Sign up</a>
+                        </li>
+
+                        <li class="lg:hidden mt-20 overflow-hidden gap-8">
+                            <i class="fa-brands fa-x-twitter text-black dark:text-white w-6 h-6 cursor-pointer hover:text-orange-400"
+                                onclick="X()"></i>
+                            <i class="fa-brands fa-discord text-black dark:text-white w-6 h-6 cursor-pointer hover:text-orange-400"
+                                onclick="discord()"></i>
+                            <i class="fa-brands ml-1 fa-instagram text-black dark:text-white w-6 h-6 cursor-pointer hover:text-orange-400"
+                                onclick="instagram()"></i>
+                            <i class="fa-brands fa-linkedin text-black dark:text-white w-6 h-6 cursor-pointer hover:text-orange-400"
+                                onclick="linkedin()"></i>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="flex items-center gap-2">
+                    <ion-icon onclick="onToggleMenu(this)" name="menu"
+                        class="menu_button py-2 px-2 rounded text-3xl text-black dark:text-white items-center cursor-pointer lg:hidden">
+                    </ion-icon>
+                </div>
+            </nav>
+        </header>
 <div class="h-screen w-screen bg-black">
     <div class="slider-thumb  bg-[#7549f3] md:bg-[#7549f380]"></div>
 
