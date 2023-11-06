@@ -31,3 +31,12 @@
     transform: translate3d(0,-3px,0) rotateZ(0.01deg);
   }
 }
+
+@media screen and (max-width: 512px) {
+  .slider-thumb::before {
+    top: 20%;
+    left:10%;
+    filter: blur(70px);
+  }
+}
+
