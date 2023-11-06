@@ -1,3 +1,5 @@
+
+
 .slider-thumb::before {
 	position: absolute;
 	content: "";
@@ -32,7 +34,7 @@
   }
 }
 
-@media screen and (max-width: 512px) {
+@media screen and (max-width: 768px) {
   .slider-thumb::before {
     top: 20%;
     left:10%;
@@ -40,3 +42,15 @@
   }
 }
 
+@media screen and (max-width: 360px) {
+.curve{
+  margin-top: 23rem !important;
+}
+}
+
+@media screen and (max-width: 300px) {
+  .curve{
+    margin-top: 21rem !important;
+  }
+  }
+  
