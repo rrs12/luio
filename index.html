@@ -16,6 +16,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Gruppo&family=Montserrat:wght@500;600&family=Pixelify+Sans&family=Poppins:wght@400;700&family=Space+Grotesk&display=swap"
         rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
 
 
 </head>
@@ -23,10 +24,10 @@
 <body class="font-[Poppins]">
     <!--Navbar-->
     <div id="full-screen" class="overflow-hidden md:h-[150vh] h-[120vh] bg-black" style="position: relative;">
-        <header class="nav_bar fixed w-full z-50 bg-black/50 backdrop-blur-lg">
+        <header class="nav_bar fixed w-full z-40 bg-black/75 backdrop-blur-xl">
             <nav
                 class="navbar flex justify-between items-center w-full px-2 mx-auto z-2 py-4 text-white overflow-hidden">
-                <div class="logo_text">
+                <div class="logo_text ml-4">
                     <a href="#" class="flex">
                         <img src="" class="sm:h-14 xs:-ml-2 xs:mr-2 sm:mr-3 xl:h-16 h-10" />
                         <span
@@ -37,25 +38,33 @@
                 </div>
                 <div class="xl:text-xl transition-all lg:block hidden rounded-l-3xl overflow-hidden nav-links lg:static absolute lg:min-h-fit min-h-[90vh] left-[-100%] top-[3%] lg:ml-10 lg:py-2 lg:w-auto w-[97vw] text-center flex-row  text-xl lg:text-base lg:mt-0 py-14 border-l-none border-r-xl"
                     id="unhide">
-
+                    <div class="lg:hidden slider-thumb  bg-[#7549f3] md:bg-[#7549f380]"></div>
                     <ul class=" flex lg:flex-row flex-col lg:gap-[2vw] gap-8 font-normal overflow-hidden px-20 h-full">
                         <li class="cursor-pointer overflow-hidden text-black dark:text-white">
-                            <a class="duration-500 font-bold hover:text-gray-400" href="#features"
+                            <a class="duration-500 font-bold hover:text-indigo-500" href="#features"
                                 onclick="hide()">Features</a>
                         </li>
                         <li class="cursor-pointer overflow-hidden text-black dark:text-white">
-                            <a class="duration-500 font-bold hover:text-gray-400" href="#review"
+                            <a class="duration-500 font-bold hover:text-indigo-500" href="#review"
                                 onclick="hide()">Review</a>
                         </li>
-                        <li class="overscroll-none overflow-hidden">
-                            <a class="lg:hidden font-bold py-2 overflow-hidden rounded-md lg:text-2xl lg:px-2 bg-gradient-to-r from-[#f9bf0e] to-[#f36f20] bg-clip-text text-transparent overscroll-none"
-                                href="login.html">
-                                Sign up</a>
+                        <li class="cursor-pointer overflow-hidden text-black dark:text-white rounded-2xl px-3 py-2 border-1 border-[#7549f3] lg:hidden hover:scale-110 duration-200 lg:mr-4 shadow shadow-indigo-500/50">
+                            <a class="duration-500 font-bold" href="#review"
+                                onclick="hide()">Join</a>
+                        </li>
+
+                        <li class="cursor-pointer overflow-hidden text-black dark:text-white rounded-2xl px-3 py-2 bg-[#7549f3] lg:hidden hover:scale-110 duration-200 lg:mr-4 shadow shadow-indigo-500/50">
+                            <a class="duration-500 font-bold" href="#review"
+                                onclick="hide()">Invite</a>
                         </li>
 
                     </ul>
                 </div>
                 <div class="flex items-center gap-2">
+                    <a
+                    class="rounded-2xl px-3 py-2 border-1 border-[#7549f3] lg:flex hidden hover:scale-110 duration-200 lg:mr-4 shadow shadow-indigo-500/50 " href="https://discord.gg/VwkQr8X28g" target="_blank">Join</a>
+                    <a
+                        class="rounded-2xl px-3 py-2 bg-[#7549f3] lg:flex hidden hover:scale-110 duration-200 lg:mr-4 shadow shadow-indigo-500/50 " href="https://discord.com/api/oauth2/authorize?client_id=1148426843221926008&permissions=8&scope=bot" target="_blank">Invite</a>
                     <ion-icon onclick="onToggleMenu(this)" name="menu"
                         class="menu_button py-2 px-2 rounded text-3xl text-black dark:text-white items-center cursor-pointer lg:hidden">
                     </ion-icon>
@@ -64,14 +73,15 @@
         </header>
         <div class="slider-thumb  bg-[#7549f3] md:bg-[#7549f380]"></div>
 
-        <div class="hero pt-[50%] sm:pt-[40%] md:pt-[20%] px-10">
-            <p class="text-white 2xl:text-6xl md:text-5xl text-3xl font-sans font-bold text-center">
-                Automation made easy, Life just started - Luio </p>
-            <p class="text-white 2xl:text-4xl md:text-2xl text-lg font-sans font-semibold text-center px-8 md:px-10 mt-5"> Luio
-                is an all in one multipurpose bot, that helps get your server from dead to activate, and also it's the
-                best choice for building up your server to making it fun for people to join</p>
+        <div class="hero pt-[50%] sm:pt-[40%] md:pt-[20%] px-10 z-10">
+            <p class="text-white 2xl:text-7xl md:text-6xl text-3xl font-sans font-bold text-center">
+                <span class="typing"></span> - Luio </p>
+            <p
+                class="text-white 2xl:text-4xl md:text-2xl text-lg font-sans font-semibold text-center px-8 md:px-14 mt-5">
+                An all in one multipurpose moderation and fun bot, <br> that changes the way things happen in your server.
+            </p>
 
-            <div  style="position: absolute; left: 0; width: 100%; bottom: 0;"><svg viewBox="0 0 500 200"
+            <div style="position: absolute; left: 0; width: 100%; bottom: 0;" class="z-0"><svg viewBox="0 0 500 200"
                     style="fill: #7549f3; transform: scaleY(-1);" class="bottom-0">
                     <path d="M 0,100 C 150,200 350,0 500,100 L 500,00 L 0,0"></path>
                 </svg></div>

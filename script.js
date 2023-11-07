@@ -20,3 +20,10 @@ function hide() {
     navLinks.classList.toggle('lg:bg-transparent')
     main_navbar.classList.toggle('hidden')
 }
+
+var typed = new Typed(".typing", {
+    strings: ["Automation Made Easy","Life Just Started"],
+    typeSpeed: 80,
+    backSpeed: 100,
+    loop: true
+});
