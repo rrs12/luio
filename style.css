@@ -1,5 +1,3 @@
-
-
 .slider-thumb::before {
 	position: absolute;
 	content: "";
@@ -41,3 +39,17 @@
     filter: blur(70px);
   }
 }
+
+/*#wave_div{
+  animation: wave 3s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
+  transform: translate3d(0, 0, 0);
+}
+
+@keyframes wave {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: -1000px;
+  }
+}*/
