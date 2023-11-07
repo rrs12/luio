@@ -2,7 +2,7 @@
 	position: absolute;
 	content: "";
 	left: 12%;
-	top: 25%;
+	top: 20%;
 	width: 20%;
 	height: 20%;
 	background: #7549f380;
@@ -34,7 +34,7 @@
 
 @media screen and (max-width: 768px) {
   .slider-thumb::before {
-    top: 20%;
+    top:25%;
     left:10%;
     filter: blur(70px);
   }
