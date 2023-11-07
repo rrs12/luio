@@ -8,7 +8,6 @@ function onToggleMenu(e) {
     navLinks.classList.toggle('left-[3%]')
     navLinks.classList.toggle('shadow')
     navLinks.classList.toggle('dark:bg-[#0c0c0c]')
-    navLinks.classList.toggle('bg-gray-200')
     main_navbar.classList.toggle('hidden')
 }
 function hide() {
@@ -18,7 +17,6 @@ function hide() {
     navLinks.classList.toggle('shadow')
     navLinks.classList.toggle('lg:shadow-none')
     navLinks.classList.toggle('dark:bg-[#0c0c0c]')
-    navLinks.classList.toggle('bg-gray-200')
+    navLinks.classList.toggle('lg:bg-transparent')
     main_navbar.classList.toggle('hidden')
-    features_section.classList.toggle('lg:block')
 }
