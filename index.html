@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,17 +12,20 @@
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Gruppo&family=Montserrat:wght@500;600&family=Pixelify+Sans&family=Poppins:wght@400;700&family=Space+Grotesk&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Gruppo&family=Montserrat:wght@500;600&family=Pixelify+Sans&family=Poppins:wght@400;700&family=Space+Grotesk&display=swap"
+        rel="stylesheet">
 
-    
+
 </head>
+
 <body class="font-[Poppins]">
     <!--Navbar-->
-    <div id="full-screen" class="overflow-hidden h-[140vh] bg-black">
-        <header class="nav_bar">
+    <div id="full-screen" class="overflow-hidden md:h-[155vh] h-[120vh] bg-black border-b-4 border-[#7549f3]" style="position: relative;">
+        <header class="nav_bar fixed w-full z-50 bg-black/50 backdrop-blur-lg">
             <nav
-                class="navbar flex justify-between items-center dark:bg-black bg-gray-200 w-full px-2 mx-auto z-2 py-4 text-white overflow-hidden">
+                class="navbar flex justify-between items-center w-full px-2 mx-auto z-2 py-4 text-white overflow-hidden">
                 <div class="logo_text">
                     <a href="#" class="flex">
                         <img src="" class="sm:h-14 xs:-ml-2 xs:mr-2 sm:mr-3 xl:h-16 h-10" />
@@ -34,13 +38,14 @@
                 <div class="xl:text-xl transition-all lg:block hidden rounded-l-3xl overflow-hidden nav-links lg:static absolute lg:min-h-fit min-h-[90vh] left-[-100%] top-[3%] lg:ml-10 lg:py-2 lg:w-auto w-[97vw] text-center flex-row  text-xl lg:text-base lg:mt-0 py-14 border-l-none border-r-xl"
                     id="unhide">
 
-                    <ul
-                        class=" flex lg:flex-row flex-col lg:gap-[2vw] gap-8 font-normal overflow-hidden px-20 h-full">
+                    <ul class=" flex lg:flex-row flex-col lg:gap-[2vw] gap-8 font-normal overflow-hidden px-20 h-full">
                         <li class="cursor-pointer overflow-hidden text-black dark:text-white">
-                            <a class="duration-500 font-bold hover:text-gray-400" href="#features" onclick="hide()">Features</a>
+                            <a class="duration-500 font-bold hover:text-gray-400" href="#features"
+                                onclick="hide()">Features</a>
                         </li>
                         <li class="cursor-pointer overflow-hidden text-black dark:text-white">
-                            <a class="duration-500 font-bold hover:text-gray-400" href="#review" onclick="hide()">Review</a>
+                            <a class="duration-500 font-bold hover:text-gray-400" href="#review"
+                                onclick="hide()">Review</a>
                         </li>
                         <li class="overscroll-none overflow-hidden">
                             <a class="lg:hidden font-bold py-2 overflow-hidden rounded-md lg:text-2xl lg:px-2 bg-gradient-to-r from-[#f9bf0e] to-[#f36f20] bg-clip-text text-transparent overscroll-none"
@@ -57,16 +62,26 @@
                 </div>
             </nav>
         </header>
-    <div class="slider-thumb  bg-[#7549f3] md:bg-[#7549f380]"></div>
+        <div class="slider-thumb  bg-[#7549f3] md:bg-[#7549f380]"></div>
 
-<div class="hero">
-<p class="text-white md:text-5xl text-3xl font-sans font-bold text-center pt-[12%] px-10">Automation made easy, Life just started - Luio </p>
-<p class="text-white md:text-2xl text-lg font-sans font-semibold text-center px-10 mt-5"> Luio is an all in one multipurpose bot, that helps get your server from dead to activate, and also it's the best choice for building up your server to making it fun for people to join</p></div>
-<svg  viewBox="0 0 500 200" style="fill: #7549f3; transform: scaleY(-1);" class="mt-2 bottom-0 lg:mt-44 md:mt-60 sm:mt-96 mt-[25rem] curve">
-    <path d="M 0,100 C 150,200 350,0 500,100 L 500,00 L 0,0"></path>
-  </svg>
-</div>
+        <div class="hero pt-[50%] sm:pt-[40%] md:pt-[20%] px-10">
+            <p class="text-white 2xl:text-6xl md:text-5xl text-3xl font-sans font-bold text-center">
+                Automation made easy, Life just started - Luio </p>
+            <p class="text-white 2xl:text-4xl md:text-2xl text-lg font-sans font-semibold text-center px-8 md:px-10 mt-5"> Luio
+                is an all in one multipurpose bot, that helps get your server from dead to activate, and also it's the
+                best choice for building up your server to making it fun for people to join</p>
 
-<section id="features" class="bg-[#7549f3] h-screen"></section>
-<script src="script.js"></script></body>
+            <div  style="position: absolute; left: 0; width: 100%; bottom: 0;" class="border-b-4 border-[#7549f3]"><svg viewBox="0 0 500 200"
+                    style="fill: #7549f3; transform: scaleY(-1);" class="bottom-0">
+                    <path d="M 0,100 C 150,200 350,0 500,100 L 500,00 L 0,0"></path>
+                </svg></div>
+        </div>
+    </div>
+
+    <section id="features" class="bg-[#7549f3] h-screen">
+        <p class="text-6xl font-bold text-white text-center md:pt-0 pt-10">Features</p>
+    </section>
+    <script src="script.js"></script>
+</body>
+
 </html>

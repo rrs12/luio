@@ -3,8 +3,8 @@
 .slider-thumb::before {
 	position: absolute;
 	content: "";
-	left: 15%;
-	top: 30%;
+	left: 12%;
+	top: 25%;
 	width: 20%;
 	height: 20%;
 	background: #7549f380;
@@ -41,16 +41,3 @@
     filter: blur(70px);
   }
 }
-
-@media screen and (max-width: 360px) {
-.curve{
-  margin-top: 23rem !important;
-}
-}
-
-@media screen and (max-width: 300px) {
-  .curve{
-    margin-top: 21rem !important;
-  }
-  }
-  
