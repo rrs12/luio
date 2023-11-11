@@ -1,17 +1,16 @@
 .slider-thumb::before {
-  position: absolute;
-  content: "";
-  left: 12%;
-  top: 18%;
-  width: 20%;
-  height: 20%;
-  background: #7549f380;
-filter:blur(100px);
-  border-radius: 62% 47% 82% 35% / 45% 45% 80% 66%;
-  will-change: border-radius, transform, opacity;
-  animation: sliderShape 5s linear infinite;
-  display: block;
-
+	position: absolute;
+	content: "";
+	left: 12%;
+	top: 18%;
+	width: 20%;
+	height: 20%;
+	background: #7549f380;
+  filter:blur(100px);
+	border-radius: 62% 47% 82% 35% / 45% 45% 80% 66%;
+	will-change: border-radius, transform, opacity;
+	animation: sliderShape 5s linear infinite;
+	display: block;
   -webkit-animation: sliderShape 5s linear infinite;
 }
 @keyframes sliderShape{
