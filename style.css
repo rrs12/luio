@@ -1,6 +1,3 @@
-body{
-  background-color: #7549f3;
-}
 .slider-thumb::before {
 	position: absolute;
 	content: "";
