@@ -21,13 +21,6 @@ function hide() {
     main_navbar.classList.toggle('hidden')
 }
 
-var typed = new Typed(".typing", {
-    strings: ["Automation Made Easy","Life Just Started"],
-    typeSpeed: 80,
-    backSpeed: 100,
-    loop: true
-});
-
 let $root = $('html, body');
 $('a[href^="#"]').click(function() {
     let href = $.attr(this, 'href');
